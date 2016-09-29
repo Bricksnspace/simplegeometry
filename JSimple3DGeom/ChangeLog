@@ -1,0 +1,10 @@
+2015-02-19  Mario Pascucci  <mpascucci@gmail.com>
+
+	* JSimpleGeom.java (alignMatrix): moved here from LDraw3D
+	(alignMatrix): moved here from LDraw3D
+	(alignMatrix): moved here from LDraw3D
+	(minAlignMatrix): moved here from LDraw3D
+
+2015-02-11  Mario Pascucci  <mpascucci@gmail.com>
+
+	* Matrix3D.java (determinant): corrected determinant formula
