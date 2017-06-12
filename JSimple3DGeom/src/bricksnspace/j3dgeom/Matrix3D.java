@@ -242,6 +242,36 @@ public class Matrix3D {
 		return a*(e*i-f*h) - b*(i*d-f*g) + c*(d*h-e*g);
 		//return a*e*i - c*e*g;
 	}
+	
+	
+	/**
+	 * Try to correct a singular matrix
+	 * when a row or a column is entirely 0
+	 * @return corrected matrix
+	 */
+	public Matrix3D correctSingular() {
+//		
+		Matrix3D m = this.getCopy();
+		if (m.a == 0 && m.b == 0 && m.c == 0) {
+			m.a = 1;
+		}
+		if (m.d == 0 && m.e == 0 && m.f == 0) {
+			m.e = 1;
+		}
+		if (m.g == 0 && m.h == 0 && m.i == 0) {
+			m.i = 1;
+		}
+		if (m.a == 0 && m.d == 0 && m.g == 0) {
+			m.a = 1;
+		}
+		if (m.b == 0 && m.e == 0 && m.h == 0) {
+			m.e = 1;
+		}
+		if (m.c == 0 && m.f == 0 && m.i == 0) {
+			m.i = 1;
+		}
+		return m;
+	}
 
 
 	/* 

@@ -1,3 +1,7 @@
+2017-06-12  Mario Pascucci  <mpascucci@gmail.com>
+
+	* src/bricksnspace/j3dgeom/Matrix3D.java (correctSingular): added method to correct singular matrix (det=0)
+
 2015-02-19  Mario Pascucci  <mpascucci@gmail.com>
 
 	* JSimpleGeom.java (alignMatrix): moved here from LDraw3D
